@@ -2,10 +2,15 @@
 # and starts_with_count methods.
 
 require 'manipulate_arrays'
-array=['Neil', 'Buzz', 'Michael']
 
 describe '#array_converter' do
     it "takes an array of strings as an argument and returns it by adding the indexes at the beginning of each element" do
-        expect(array_converter(array)).to eq(['1 - Neil', '2 - Buzz', '3 - Michael'])
+        expect(array_converter(['Neil', 'Buzz', 'Michael'])).to eq(['1 - Neil', '2 - Buzz', '3 - Michael'])
+    end
+end
+
+describe '#reverse_array' do
+    it " takes an array of strings as an argument and returns a new array while reversing each word it contains as well as their position in the array" do
+        expect(reverse_array(['Neil', 'Buzz', 'Michael'])).to eq(['leahciM', 'zzuB', 'lieN'])
     end
 end
