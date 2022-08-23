@@ -10,7 +10,13 @@ describe '#array_converter' do
 end
 
 describe '#reverse_array' do
-    it " takes an array of strings as an argument and returns a new array while reversing each word it contains as well as their position in the array" do
+    it "takes an array of strings as an argument and returns a new array while reversing each word it contains as well as their position in the array" do
         expect(reverse_array(['Neil', 'Buzz', 'Michael'])).to eq(['leahciM', 'zzuB', 'lieN'])
+    end
+end
+
+describe '#starts_with' do
+    it "takes an array of strings and a letter as arguments and returns the words contained in the array, starting by the provided letter." do
+        expect(starts_with(['Neil', 'Buzz', 'Michael'], 'm')).to eq(['Michael'])
     end
 end

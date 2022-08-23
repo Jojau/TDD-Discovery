@@ -13,3 +13,7 @@ def reverse_array(array)
     end
     return new_array
 end
+
+def starts_with(array, letter)
+    array.select {|value| value.downcase.start_with?(letter) }
+end
