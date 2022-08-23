@@ -15,7 +15,7 @@ def reverse_array(array)
 end
 
 def starts_with(array, letter)
-    array.select {|value| value.downcase.start_with?(letter) }
+    array.select {|value| value.downcase.start_with?(letter.downcase) }
 end
 
 def starts_with_count(array, letter)
