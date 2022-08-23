@@ -1,4 +1,4 @@
-# TO DO: Write specs for you hey_oh method
+# TO DO: Write specs for your hey_oh method
 
 require 'hey_oh'
 array=(0..20).to_a
