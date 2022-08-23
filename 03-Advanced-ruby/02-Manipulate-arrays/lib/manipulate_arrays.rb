@@ -17,3 +17,7 @@ end
 def starts_with(array, letter)
     array.select {|value| value.downcase.start_with?(letter) }
 end
+
+def starts_with_count(array, letter)
+    starts_with(array, letter).count()
+end

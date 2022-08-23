@@ -20,3 +20,9 @@ describe '#starts_with' do
         expect(starts_with(['Neil', 'Buzz', 'Michael'], 'm')).to eq(['Michael'])
     end
 end
+
+describe '#starts_with_count' do
+    it "takes an array of strings and a letter as arguments and returns the number of words contained in the array, starting by the provided letter." do
+        expect(starts_with_count(['Neil', 'Buzz', 'Michael'], 'm')).to eq(1)
+    end
+end
